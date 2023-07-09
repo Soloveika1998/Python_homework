@@ -27,10 +27,10 @@ def task32():
 
     list_my = [random.randint(0, 20) for i in range(amount_of_alements)]
 
-    max_valye = int(input("Введите максимальное значение: "))
+    max_value = int(input("Введите максимальное значение: "))
     min_value = int(input("Введите минимальное значение: "))
     
-    list_index = [i for i in range(len(list_my)) if list_my[i] >= min_value and list_my[i] <= max_valye]
+    list_index = [i for i in range(len(list_my)) if max_value >= list_my[i] >= min_value]
     
     print(list_my)
     print(list_index)

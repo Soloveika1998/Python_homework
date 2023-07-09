@@ -43,6 +43,50 @@ def task24():
             three = (i + 2) % (number_of_bushes + 1)
     print("Максимальное количество ягод за один проход будет собрано с кустов № {}, № {} и № {} в количестве {} ягод ".format(first, second, three, max_summ_yield))
 
-task24()
+# task24()
+# input("Введите любую клавишу что бы продолжить ")
+# os.system("cls")
+
+# def fib(n):
+#     first_fib = 1
+#     second_fib = 1
+#     count = 0
+#     list_fib = list()
+#     list_fib.append(1)
+#     list_fib.append(1)
+#     for i in range(n):
+#         fib_number = list_fib[i] + list_fib[i + 1]
+#         list_fib.append(fib_number)
+#     count += 1
+#     print(list_fib)
+# n = int(input("Введите количество чисел фиббоначи"))
+# fib(n)
+# input("Введите любую клавишу что бы продолжить ")
+# os.system("cls")
+
+
+def quick_sort(array):
+    if len(array) <= 1:
+        return array
+    else:
+        pivot = array[0]
+    less = [i for i in array[1: ] if i <= pivot]
+    greater = [[i for i in array[1: ] if i > pivot]]
+    return quick_sort(less) + [pivot] + quick_sort(greater)
+
+# print(quick_sort([9,8,6,4,7,8,3]))
+# input("Введите любую клавишу что бы продолжить ")
+# os.system("cls")
+
+
+def quick_sort(array):
+    if len(array) <= 1:
+         return array
+    else:
+        pivot = array[0]
+    less = [i for i in array[1:] if i <= pivot]  # массив в которм все элементы меньше нашего числа
+    greater = [i for i in array[1:] if i > pivot]  # массив в котором все элементы больше нашего числа
+    return quick_sort(less) + [pivot] + quick_sort(greater)
+
 input("Введите любую клавишу что бы продолжить ")
 os.system("cls")

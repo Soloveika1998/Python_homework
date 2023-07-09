@@ -70,6 +70,6 @@ def task20():
         print('За это слово вы получаете', sum([key for one_char in word for key, values in scrabble_data_ru.items() if one_char in values ]), 'очков')
     else:
         print("Попробуйте еще раз!")
-# task20()
-# input("Введите любую клавишу что бы продолжить ")
-# os.system("cls")
+task20()
+input("Введите любую клавишу что бы продолжить ")
+os.system("cls")
